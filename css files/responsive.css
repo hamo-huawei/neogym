@@ -1,0 +1,279 @@
+@media screen and (max-width: 425px) {
+
+    /* start nav bar  */
+    .nav-bar::before {
+        content: "";
+        height: 2px;
+        width: calc(100% - 30px);
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+
+    }
+
+    .nav-bar .links:hover ul {
+        display: block;
+    }
+
+    .nav-bar .links .menu {
+        color: white;
+        transform: rotate(90deg);
+        display: inline-block;
+        transition: 0.7s
+    }
+
+    .nav-bar .links .menu:hover {
+        transform: rotate(0);
+    }
+
+    .nav-bar .links ul {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #c7c7c7;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-bar .links ul li a {
+        display: block;
+        text-transform: capitalize;
+        font-weight: bold;
+        color: black;
+        padding: 15px;
+        transition: 0.5s;
+    }
+
+    .nav-bar .links ul li a:hover {
+        padding-left: 30px;
+        text-decoration: underline;
+        color: #b16161;
+    }
+
+    /* start nav bar  */
+    /* start text container-1  */
+    .container-1 .text {
+        text-align: center;
+        position: relative;
+        margin-top: 1em;
+        width: 100%;
+        color: white;
+        padding: 0 10px;
+    }
+
+    .container-1 .chevrons {
+        display: none;
+    }
+
+    /* end text container-1  */
+    /* start container-2  */
+    .container-2 h2 {
+        font-size: 25px;
+    }
+
+    .container-2 h2::before {
+        width: 50px;
+        transform: translateX(-22px);
+    }
+
+    .container-2 .flex-cont2 {
+        margin-top: 50px;
+        perspective: 300px;
+    }
+
+    /* end container-2  */
+    /* start container-3  */
+    .container-3 h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .container-3 p {
+        color: white;
+        width: 100%;
+        line-height: 2;
+        text-align: center;
+    }
+
+    /* end container-3  */
+    /* start container-4  */
+    .container-4 .flex-cont4 .part-cont4 {
+        width: 255px;
+    }
+
+    .container-4 {
+        min-height: 85em;
+    }
+
+    .container-4 .flex-cont4 .part-cont4 .socials {
+        left: 15%;
+    }
+
+    /* end container-4  */
+    /* start container-5  */
+    .container-5 {
+        flex-direction: column;
+    }
+
+    .container-5 img {
+        width: 100%;
+    }
+
+    .container-5 .form-cont5 {
+        width: 100%;
+    }
+
+    .container-5 .form-cont5 form input {
+        width: 100%;
+    }
+
+    .container-5 .form-cont5 form textarea {
+        width: 100%;
+    }
+
+    .container-5 .form-cont5 form input[type="submit"] {
+        width: 50%;
+    }
+
+    /* end container-5  */
+}
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
+
+    /* start nav bar  */
+    .nav-bar::before {
+        content: "";
+        height: 2px;
+        width: calc(100% - 30px);
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+
+    }
+
+    .nav-bar .links:hover ul {
+        display: block;
+    }
+
+    .nav-bar .links .menu {
+        color: white;
+        transform: rotate(90deg);
+        display: inline-block;
+        transition: 0.7s
+    }
+
+    .nav-bar .links .menu:hover {
+        transform: rotate(0);
+    }
+
+    .nav-bar .links ul {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #c7c7c7;
+        width: 100%;
+        display: none;
+        z-index: 999;
+    }
+
+    .nav-bar .links ul li a {
+        display: block;
+        text-transform: capitalize;
+        font-weight: bold;
+        color: black;
+        padding: 15px;
+        transition: 0.5s;
+    }
+
+    .nav-bar .links ul li a:hover {
+        padding-left: 30px;
+        text-decoration: underline;
+        color: #b16161;
+    }
+
+    /* start nav bar  */
+    /* start text container-1  */
+    .container-1 .text {
+        text-align: center;
+        position: relative;
+        margin-top: 2em;
+        width: 100%;
+        color: white;
+        padding: 0 10px;
+    }
+
+    .container-1 .chevrons {
+        display: none;
+    }
+
+    /* end text container-1  */
+    /* start container-2  */
+    .container-2 .flex-cont2 {
+        margin-top: 50px;
+        perspective: 300px;
+    }
+
+    /* end container-2  */
+    /* start container-3  */
+    .container-3 h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .container-3 p {
+        color: white;
+        width: 100%;
+        line-height: 2;
+        text-align: center;
+    }
+
+    /* end container-3  */
+     /* start container-4  */
+     .container-4 {
+        min-height: 95em;
+    }
+    /* end container-4  */
+     /* start container-5  */
+     .container-5 {
+        flex-direction: column;
+    }
+
+    .container-5 img {
+        width: 100%;
+    }
+
+    .container-5 .form-cont5 {
+        width: 100%;
+    }
+
+    .container-5 .form-cont5 form input {
+        width: 100%;
+    }
+
+    .container-5 .form-cont5 form textarea {
+        width: 100%;
+    }
+
+    .container-5 .form-cont5 form input[type="submit"] {
+        width: 50%;
+    }
+
+    /* end container-5  */
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* start container-4  */
+    .container-4 {
+        min-height: 70em;
+    }
+    /* end container-4  */
+}
+
+@media screen and (min-width: 992px) and (max-width: 1035px) {
+
+/* start container-4  */
+    .container-4 {
+        min-height: 70em;
+    }
+    /* end container-4  */
+}

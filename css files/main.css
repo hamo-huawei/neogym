@@ -1,0 +1,407 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button-style {
+    outline: none;
+    border: 1px solid white;
+    padding: 8px 25px;
+    border-radius: 13px;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: white;
+    transition: 0.5s;
+}
+
+.button-style:hover {
+    background-color: #fff;
+    color: black;
+    border: none
+}
+
+/* start container-1  */
+.container-1 {
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+}
+
+/* start nav bar  */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 15px;
+}
+
+.nav-bar::before {
+    content: "";
+    height: 2px;
+    width: calc(100% - 30px);
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+
+.nav-bar h1 a {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.nav-bar .links .menu {
+    display: none;
+}
+
+.nav-bar .links ul {
+    display: flex;
+    z-index: 999;
+
+}
+
+.nav-bar .links ul li a {
+    display: block;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.nav-bar .links ul li a:hover {
+
+    text-decoration: underline;
+    color: #000000;
+}
+
+
+/* end nav bar  */
+.container-1 .chevrons {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container-1 .chevrons i {
+    color: white;
+    font-size: 20px;
+}
+
+
+.bullets {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    list-style-type: circle;
+    display: flex;
+    gap: 20px;
+}
+
+.bullets li {
+    color: white;
+    font-size: 30px;
+}
+
+/* start text  */
+.container-1 .text {
+    text-align: center;
+    position: relative;
+    width: 70%;
+    margin: 6em auto 0 auto;
+    color: white;
+}
+
+.container-1 .text h3,
+h2,
+h1 {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.container-1 .text p {
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+/* start text  */
+/* end container-1  */
+/* start container-2  */
+.container-2 {
+    background-image: url(../images/us-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 40em;
+    padding: 20px;
+
+}
+
+.container-2 h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 35px;
+    position: relative;
+    padding-top: 50px;
+}
+
+.container-2 h2::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    height: 5px;
+    width: 70px;
+    background-color: red;
+    transform: translateX(-30px);
+    margin-top: 10px;
+}
+
+.container-2 .flex-cont2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 275px);
+    justify-content: center;
+    gap: 40px;
+    margin-top: 6EM;
+    perspective: 300px;
+    perspective-origin: bottom center;
+
+}
+
+.container-2 .flex-cont2 .part {
+    padding: 10px;
+    transition: 0.5s;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+}
+
+.container-2 .flex-cont2 .part:hover {
+    transform: translateZ(10px);
+    border: 2px solid white
+}
+
+.container-2 .flex-cont2 .part h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+/* end container-2  */
+/* start container-3  */
+.container-3{
+    background-image: url(../images/healthy-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 420px;
+    padding: 20px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.container-3 h1{
+    text-transform: uppercase;
+
+    color: white;
+}
+.container-3 p{
+    color: white;
+    width: 70%;
+    line-height: 2;
+}
+/* end container-3  */
+/* start container-4  */
+.container-4{
+    background-image: url(../images/trainer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 50em;
+}
+.container-4 h2{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 3em;
+    position: relative;
+}
+.container-4 h2::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    height: 5px;
+    width: 70px;
+    background-color: red;
+    transform: translateX(-30px);
+    margin-top: 10px;
+}
+.container-4 .flex-cont4{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 5em;
+}
+.container-4 .flex-cont4 .part-cont4{
+    width: 320px;
+    position: relative;
+}
+.container-4 .flex-cont4 .part-cont4 h3{
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.container-4 .flex-cont4 .part-cont4 img{
+    width: 100%;
+    border-radius: 20px;
+}
+.container-4 .flex-cont4 .part-cont4 .socials{
+    background-color: white;
+    width: fit-content;
+    padding: 10px 40px;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: -15px;
+    left: 21%;
+}
+.container-4 .flex-cont4 .part-cont4 .socials i{
+    font-size: 20px;
+    color: red;
+    transition: 0.5s;
+}
+.container-4 .flex-cont4 .part-cont4 .socials i:hover{
+    color: blue;
+}
+/* end container-4  */
+/* start container-5  */
+.container-5{
+    display: flex;
+    min-height: 40em;
+}
+.container-5 img{
+    width: 50%;
+}
+.container-5 .form-cont5{
+    background-color: #2e2a66;
+    padding: 20px;
+    width: calc(100% - 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.container-5 .form-cont5 h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
+    position: relative;
+}
+.container-5 .form-cont5 h2::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 35px;
+    height: 5px;
+    width: 70px;
+    background-color: red;
+    transform: translateX(-30px);
+    margin-top: 10px;
+}
+.container-5 .form-cont5 form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.container-5 .form-cont5 form input{
+    width: 80%;
+    height: 4em;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 12px;
+}
+.container-5 .form-cont5 form input[type="submit"]{
+    align-self: flex-end;
+    width: 30%;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 20px;
+    color: white;
+    background-color: #ff0047;
+
+}
+.container-5 .form-cont5 form textarea{
+    width: 80%;
+    height: 10em;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 12px;
+}
+/* end container-5  */
+/* start container-6  */
+.container-6{
+    padding: 20px;
+    background-color: #042e4b;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 15em;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.container-6 div{
+    text-align: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.container-6 div i{
+    font-size: 30px;
+}
+/* end container-6  */
+/* start footer  */
+footer{
+    padding: 20px;
+}
+footer h2{
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+}
+/* end footer  */
